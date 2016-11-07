@@ -6,6 +6,7 @@ using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using MyScreenz.JSON;
+using System.ComponentModel.DataAnnotations;
 
 namespace MyScreenz
 {
@@ -102,7 +103,7 @@ namespace MyScreenz
 
     public class Setting
     {
-
+        [Required(ErrorMessage ="The name field gre is a required field")]
         public string sname { get; set; }
         public string stext { get; set; }
         public int sid { get; set; }

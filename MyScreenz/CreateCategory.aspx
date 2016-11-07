@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
         <link href="Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+    <%--<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>--%>
     <script>               
  var catLst =[];
         $(function () {
@@ -41,7 +42,7 @@
             <div class="form-group">
                  <div class="input-group ui-widget">
                      <div class="input-group-addon"><label for="tags">Category Name:</label></div>
-                     <input id="tags" class="form-control" placeholder="Enter New Category Name" />
+                     <input id="tags" data-val="true" data-val-required=" " class="form-control" placeholder="Enter New Category Name" />
                  </div>
             </div>            
         </div>

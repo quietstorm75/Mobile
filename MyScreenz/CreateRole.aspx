@@ -40,7 +40,7 @@
             <div class="form-group">
                  <div class="input-group ui-widget">
                      <div class="input-group-addon">Role Name:</div>
-                     <input id="tags" class="form-control" placeholder="Enter New Role Name" />
+                     <input id="tags" class="form-control" data-val='true' data-val-required='This is a required field' placeholder="Enter New Role Name" />
                  </div>
             </div>            
         </div>

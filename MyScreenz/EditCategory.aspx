@@ -4,9 +4,11 @@
 
 
     <script>
-        var catLst =[];;
+        var catLst =[]; var catChk=[];
         $(function () {
             $select = $('#categoryname');
+            $checkbox = $("#cbActiveCat");
+
             var query = window.location.search.substring(1);
             var id = query.split("=");
             //request the JSON data and parse into the select element
@@ -20,9 +22,12 @@
                     $select.html('');
                     $.each(JSON.parse(data.d), function (key, val) {
                         catLst[i] = val.catname;
+                        catChk[i] = val.active;
                         i++;
                     });
                     $select.val(catLst[id[1]]);
+                    if (catChk[id[1]])
+                        $checkbox.attr("checked", "checked");
                 },
                 error: function (data) {
                     $select.val('No data available');
@@ -49,7 +54,7 @@
             <div class="form-group">
                 <label class="control-label">Activate Category</label>
                 <div>
-                    <input type="checkbox" name="cbActiveCat" class="check" /></div>
+                    <input type="checkbox" data-val='true' data-val-required='This is a required field' name="cbActiveCat" id="cbActiveCat" class="check" /></div>
             </div>
         </div>
         <div class="row">&nbsp;</div>

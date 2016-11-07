@@ -120,7 +120,7 @@ font-weight:bold;
 
 }
 .table-col-hdr {
-    border:1px solid #000;  
+    border-right:1px solid #000;  
     color:#fff;
     background-color:#0052a0;   
    
@@ -143,4 +143,10 @@ padding:4px 20px 4px 20px;
 }
 .rowsel{
 background-color:#eee; 
+}
+.sectionhdr {
+font-weight:bold;
+font-size:20px;
+color:#0052a0;
+float:left;
 }

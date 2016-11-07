@@ -40,7 +40,7 @@
             <div class="form-group">
                  <div class="input-group ui-widget">
                      <div class="input-group-addon">Setting Name:</div>
-                     <input id="tags" class="form-control" placeholder="Enter New Setting Name" />
+                     <input id="tags" class="form-control" data-val="true" data-val-required="The name field is required" placeholder="Enter New Setting Name" />
                  </div>
             </div>            
         </div>
@@ -50,7 +50,7 @@
                 <div class="input-group ui-widget">
                     <div class="input-group-addon">Setting Value:</div>
                     <div>
-                        <input type="text" name="settingtext" class="form-control" placeholder="Enter Value for Setting" /></div>
+                        <input type="text" name="settingtext" data-val="true" data-val-required="The value field is required" class="form-control" placeholder="Enter Value for Setting" /></div>
                 </div>
             </div>
         </div>
