@@ -1,15 +1,21 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-size:13px;
+    padding-top: 0px;
+    padding-bottom: 20px;   
+    color:#fff;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    font-size:18px;
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    /*padding-left: 10px!important;
+    padding-right: 10px!important;*/
+    min-height:1000px;
+    background-color:#0052a0;
+    background-image:url('images/back_1_ny.png');
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -25,7 +31,8 @@ input[type="password"],
 input[type="email"],
 input[type="tel"],
 input[type="select"] {
-    max-width: 280px;
+    min-width: 80px!important;
+  
 }
 
 /* Responsive: Portrait tablets and up */
@@ -36,6 +43,9 @@ input[type="select"] {
     .body-content {
         padding: 0;
     }
+
+   
+
 }
 
 .listset {
@@ -46,6 +56,7 @@ padding:2px 10px 0px 6px;
     border-bottom:1px solid #fff;
     border-right:1px solid #0052a0;
     border-left:1px solid #0052a0;
+    height:60px;
     
 }
 
@@ -60,7 +71,7 @@ padding:2px 10px 0px 6px;
 
 .roles {
 border:1px solid #000;
-height:150px;
+height:300px;
 overflow-y:scroll;
 float:left;
 width:100%;
@@ -79,9 +90,17 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
 
+
 @media screen and (min-width: 768px) {
 .mobilelook {
    min-width:768px;
+}
+
+input.btn-tablet {
+ 
+ min-height:250px;
+ min-width:250px;
+ 
 }
 
 }
@@ -96,15 +115,25 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     .mobilelook {
         max-width: 992px;
     }
+ 
 }
 
+@media screen and (max-width: 768px) {
+   input.btn-tablet {
+      min-height:100px;
+      min-width:200px;
+           
 
+}
+
+}
 .mobilelook {
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     padding: 10px 50px 10px 50px;
-    display: block;
+    
+    /*background-image: url('images/back_1_ny.png');*/
 }
 
 
@@ -113,22 +142,28 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
    
 }
 
+.sectionhdr {
+font-weight:bold;
+font-size:20px;
+float:left;
+}
 /*Tables*/
 .table-header {
 background-color:#ccff00;
 font-weight:bold;
+font-size:18px;
 
 }
 .table-col-hdr {
     border-right:1px solid #000;  
     color:#fff;
-    background-color:#0052a0;   
+    background-color:#051676;   
    
 }
 
 #row-display {
 /*style rows*/
-border:1px solid #333; 
+border:1px solid #ccc; 
 padding:4px 20px 4px 20px;
 
 }
@@ -138,15 +173,67 @@ padding:4px 20px 4px 20px;
 }
 
 .altrow {
-   background-color:#ddd; 
-   
+   background-color:#ddd;
+   padding-top:20px;
+   padding-bottom:20px; 
+   height:60px;
+   color:#0052a0;   
 }
 .rowsel{
 background-color:#eee; 
-}
-.sectionhdr {
-font-weight:bold;
-font-size:20px;
 color:#0052a0;
-float:left;
+padding-top:20px;
+padding-bottom:20px;
+margin:0px 0px 0px 0px;
+}
+
+
+/*override bootstrap*/
+.btn {
+width:100%;
+height:60px;
+font-size:20px; font-weight:bold;
+border:1px solid #fff;
+}
+
+    .btn:hover {
+    background-color:#aaa;
+    border:2px solid #000;
+    }
+.form-control {
+height:60px;
+font-size:18px
+}
+
+.input-group-addon, .control-label {
+    font-size:20px!important;
+    font-weight:normal;
+}
+
+
+.activate-text, .rememberme-text {
+    color: #fff;
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.4);
+    line-height: 30px;
+    font-size:18px;
+    float:right;
+    position:absolute;
+}
+
+input[type='checkbox'], input[type='radio'] {
+ width:30px; height:30px;
+ border-radius:6px;-webkit-border-radius: 6px;
+}
+
+/*Tablet section*/
+
+input.btn-tablet {
+  font-size: 16px;
+  color:#fff;
+  border: 1px solid #000000;
+  background: #ff9900 url("") no-repeat 10px center;
+  cursor: pointer;
+   border-radius: 15px;
+    -moz-border-radius: 15px;
+    margin:0px auto 0px auto;
 }

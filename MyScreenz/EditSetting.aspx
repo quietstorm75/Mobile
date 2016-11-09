@@ -49,17 +49,18 @@
         </div>
         <div class="row">&nbsp;</div>
 
-        <div class="row">
+  <div class="row">
             <div class="form-group">
-                <label class="control-label">Activate Setting</label>
-                <div>
-                    <input type="checkbox" name="cbActive" class="check" />
+               
+                <div>                    
+                    <input type="checkbox" name="cbActiveCat" id="cbActiveCat"  />
+                    <label class="activate-text">Activate Setting</label>
                 </div>
             </div>
         </div>
         <div class="row">&nbsp;</div>
         <div>
-            <input type="submit" class="btn btn-primary" value="Update Setting" />
+            <input type="button" class="btn btn-primary" value="Update Setting" />
         </div>
     </div>
 

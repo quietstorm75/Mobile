@@ -56,7 +56,7 @@
         </div>
         <div class="row">&nbsp;</div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Create Setting" />
+            <input type="button" class="btn btn-primary" value="Add Setting" />
         </div>
     </div>
          <script src="Scripts/jquery-ui-1.12.1.min.js"></script>

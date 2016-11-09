@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navigation.master.cs" Inherits="MyScreenz.Navigation" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/fullcalendar.min.css" rel="stylesheet" />
+    <script src="Scripts/lib/moment.min.js"></script>
+    <script src="Scripts/fullcalendar.min.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <div>
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <div>
+                                        <div>
+                                            <input id="btnMeeting" class="btn-tablet" type="button" value="Upcoming Meetings" /></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group  col-md-4">
+                                    <div>
+                                        <div>
+                                            <input id="btnCalendar" class="btn-tablet" type="button" value="View Calendar" /></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group  col-md-4">
+                                    <div>
+                                        <div>
+                                            <input id="btnDirectory" class="btn-tablet" type="button" value="View Directory" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!--main content of page -->
+                <div class="col-md-10">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

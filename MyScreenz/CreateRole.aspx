@@ -39,14 +39,14 @@
         <div class="row">
             <div class="form-group">
                  <div class="input-group ui-widget">
-                     <div class="input-group-addon">Role Name:</div>
+                     <div class="input-group-addon"><label>Role Name:</label></div>
                      <input id="tags" class="form-control" data-val='true' data-val-required='This is a required field' placeholder="Enter New Role Name" />
                  </div>
             </div>            
         </div>
         <div class="row">&nbsp;</div>
         <div class="">
-            <input type="submit" class="btn btn-primary" value="Create Role" />
+            <input type="button" class="btn btn-primary" value="Create Role" />
         </div>
     </div>
           <script src="Scripts/jquery-ui-1.12.1.min.js"></script>

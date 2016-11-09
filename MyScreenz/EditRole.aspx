@@ -33,16 +33,19 @@
         <div class="row">
             <div class="form-group">
                  <div class="input-group ui-widget">
-                     <div class="input-group-addon">Role Name:</div>                     
+                     <div class="input-group-addon"><label>Role Name:</label></div>                     
                      <select name="roleselect" id="roleselect" class="form-control"></select>
                  </div>
             </div>            
         </div>
         <div class="row">&nbsp;</div>     
-        <div class="row">
+  <div class="row">
             <div class="form-group">
-              <label class="control-label">Activate Role</label>
-                <div><input type="checkbox" name="cbActiveRole" class="check" /></div>
+               
+                <div>                    
+                    <input type="checkbox" name="cbActiveCat" id="cbActiveCat"  />
+                    <label class="activate-text">Activate Category</label>
+                </div>
             </div>
         </div>
         <div class="row">&nbsp;</div>

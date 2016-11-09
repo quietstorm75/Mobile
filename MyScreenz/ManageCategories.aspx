@@ -29,13 +29,12 @@
                         else
                             str = "Activate";
 
-                        $table.append("<div class='row'>" +
-                            //"<div class='" + altclass + "'>" +
+                        $table.append("<div class='row'>" +                         
                             "<div class='" + altclass + " col-md-2 col-sm-4 hidden-sm hidden-xs'>" + val.catid + "</div>" +
                             "<div class='" + altclass + " col-md-7 col-sm-10 col-xs-6'>" + val.catname + "</div>" +
                             "<div class='" + altclass + " col-md-2 col-sm-4 col-xs-2 hidden-sm hidden-xs'><a href='#' class='c_active'>" + str + "</a></div>" +
-                            "<div class='" + altclass + " col-md-1 col-sm-2 col-xs-6'><a href='EditCategory.aspx?id=" + val.catid + "' class='c_edit'><span class='glyphicon glyphicon-pencil'></span></a></div>" +
-                            //"</div>" +
+                            "<div class='" + altclass + " col-md-1 col-sm-2 col-xs-6'>[<a href='EditCategory.aspx?id=" + val.catid + "' class='c_edit'>Edit</a>]</div>" +
+                           
                             "</div>");
                     });
 
