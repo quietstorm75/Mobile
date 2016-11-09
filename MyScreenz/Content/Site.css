@@ -98,7 +98,7 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 
 input.btn-tablet {
  
- min-height:250px;
+ min-height:150px;
  min-width:250px;
  
 }
@@ -229,11 +229,34 @@ input[type='checkbox'], input[type='radio'] {
 
 input.btn-tablet {
   font-size: 16px;
-  color:#fff;
+  color:#fff;  
   border: 1px solid #000000;
   background: #ff9900 url("") no-repeat 10px center;
   cursor: pointer;
    border-radius: 15px;
     -moz-border-radius: 15px;
     margin:0px auto 0px auto;
+}
+#open {
+background-color:#0052a0;
+float:left;
+width:40px;
+height:1000px;
+text-orientation:sideways-left;
+z-index:10;
+position:absolute;
+
+}
+#toggle {
+
+    z-index:10;    
+    margin-left:40px;
+    float:left;
+    position:absolute;
+    background-color:#1b1d1d;
+    height:1000px;
+    padding:20px;
+    border:5px solid #0052a0;
+    overflow:hidden;
+    
 }
